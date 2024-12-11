@@ -173,10 +173,10 @@ variables = {
 
     
 # Título da aplicação
-st.markdown("<h1 style='color: darkgreen;'>SDG Attributes - SDG 7 and 13</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='color: darkgreen;'> Atributos ODS 7 e 13</h1>", unsafe_allow_html=True)
 
 # Criação de abas para SDG 7 e 13
-tab1, tab2 = st.tabs(["SDG 7", "SDG 13"])
+tab1, tab2 = st.tabs(["ODS 7", "ODS 13"])
 
 # Função para exibir conteúdo de cada aba
 def display_ods_tab(ods_group):
@@ -214,7 +214,7 @@ with tab2:
 # Rodapé com fonte e créditos
 st.write("---")
 st.markdown(
-    "<p><strong>Tool developed by Darliane Cunha.</strong></p>", 
+    "<p><strong>Ferramenta desenvolvida por Darliane Cunha.</strong></p>", 
     unsafe_allow_html=True
 )
 
