@@ -1,0 +1,9 @@
+# Alternative import strategy for calculations and radar_chart
+import os
+import sys
+
+# Add the utils directory to the Python path explicitly
+sys.path.append(os.path.join(os.path.dirname(__file__), 'utils'))
+
+from calculations import calculate_final_score
+from radar_chart import plot_radar_chart
