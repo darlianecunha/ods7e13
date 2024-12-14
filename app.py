@@ -30,7 +30,7 @@ def plot_radar_chart(scores, categories):
 # Definir variáveis agrupadas por ODS com prefixos
 
 variaveis = {
-"ODS 7": [
+"ODS 7":[
     {
         "name": "7.1 Número de programas de conscientização em uso racional de energia",
         "options": [
@@ -40,6 +40,8 @@ variaveis = {
             "3: Mais de 5 programas em operação, atingindo mais de 500 pessoas."
         ]
     },
+  
+
     {
         "name": "7.2 Número de programas de gestão de eficiência energética",
         "options": [
