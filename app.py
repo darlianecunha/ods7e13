@@ -117,7 +117,7 @@ variaveis = {
           ]
         }
     ],
-    “ODS 8: [
+    "ODS 8": [
         {
             "nome": "8.1 Ausências devido ao absenteísmo relacionado à saúde",
             "opções": [
