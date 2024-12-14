@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # Função para calcular a pontuação final
 def calculate_final_score(scores):
-    max_score = len(scores) * 3  # pontuação máxima se todas as variáveis tiverem nota 3
+    max_score = len(scores) * 3  # Pontuação máxima se todas as variáveis tiverem nota 3
     total_score = sum(scores)
     percentage_score = (total_score / max_score) * 100 if max_score > 0 else 0
     return percentage_score
@@ -14,7 +14,7 @@ def plot_radar_chart(scores, categories):
     if len(scores) != len(categories):
         st.error("O número de pontuações e categorias não coincide.")
         return None
-    
+
     values = scores + scores[:1]  # Repetir o primeiro valor para fechar o círculo
     angles = np.linspace(0, 2 * np.pi, len(scores), endpoint=False).tolist()
     angles += angles[:1]  # Repetir o primeiro ângulo para fechar o gráfico
@@ -647,6 +647,7 @@ variaveis = {
     ]
 }
     
+
 # Título da aplicação
 st.markdown("<h1 style='color: darkgreen;'> Atributos ODS </h1>", unsafe_allow_html=True)
 
@@ -656,14 +657,16 @@ def display_ods_tab(ods_group):
     scores = []
     categories = []
     for variable in variaveis[ods_group]:
-        option = st.selectbox(variable["nome"], options=variable["opções"])
         try:
-            scores.append(int(option.split(":")[0]))  # Converte o valor numérico da opção
-        except ValueError:
-            st.error("Erro ao interpretar o valor da opção selecionada.")
+            option = st.selectbox(variable["nome"], options=variable["opções"])
+            scores.append(int(option.split(":")[0]))  # Extrai o valor numérico da opção
+            categories.append(variable["nome"].split(" ")[0])  # Usa o prefixo do nome
+        except KeyError as e:
+            st.error(f"Erro ao acessar a variável: {e}")
             return
-        prefix = variable["nome"].split(" ")[0]
-        categories.append(prefix)
+        except ValueError:
+            st.error("Erro ao interpretar a opção selecionada.")
+            return
 
     if len(scores) != len(categories):
         st.error("Erro: O número de pontuações e categorias não coincide.")
