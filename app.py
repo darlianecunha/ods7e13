@@ -141,7 +141,7 @@ variaveis = {
         ]
     },
     {
-        "name": "7.13 Quantidade de navios usando energia renovável no porto",
+        "nome": "7.13 Quantidade de navios usando energia renovável no porto",
         "opções": [
             "0: Nenhum navio utiliza energia renovável.",
             "1: Até 5% dos navios no porto utilizam energia renovável.",
@@ -150,7 +150,7 @@ variaveis = {
         ]
     },
     {
-        "name": "7.14 Tarifas diferenciadas para navios com desempenho acima dos padrões ambientais",
+        "nome": "7.14 Tarifas diferenciadas para navios com desempenho acima dos padrões ambientais",
         "opções": [
             "0: Nenhuma aplicação de tarifas diferenciadas.",
             "1: Até 5% de desconto nas tarifas portuárias.",
@@ -528,7 +528,7 @@ variaveis = {
     },
     {
         "nome": "13.4 Programa de Monitoramento Climático",
-        "options": [
+        "opções": [
             "0: Programa inexistente.",
             "1: Programa em fase de implementação.",
             "2: Programa implementado, mas dados usados de forma limitada.",
