@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 def calculate_final_score(scores):
     max_score = len(scores) * 3  # pontuação máxima se todas as variáveis tiverem nota 3
     total_score = sum(scores)
-    percentage_score = (total_score / max_score) * 100
+    percentage_score = (total_score / max_score) * 100 if max_score > 0 else 0
     return percentage_score
 
 # Função para plotar o gráfico radar
@@ -19,7 +19,7 @@ def plot_radar_chart(scores, categories):
     angles = np.linspace(0, 2 * np.pi, len(scores), endpoint=False).tolist()
     angles += angles[:1]  # Repetir o primeiro ângulo para fechar o gráfico
 
-    fig, ax = plt.subplots(figsize=(10, 10), subplot_kw=dict(polar=True))
+    fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(polar=True))
     ax.fill(angles, values, color='teal', alpha=0.25)
     ax.plot(angles, values, color='teal', linewidth=2)
     ax.set_yticklabels([])
@@ -654,18 +654,19 @@ variaveis = {
 # Título da aplicação
 st.markdown("<h1 style='color: darkgreen;'> Atributos ODS </h1>", unsafe_allow_html=True)
 
-# Criação de abas para SDG 7 e 13
-tab1, tab2 = st.tabs(["ODS 7", "ODS 8", "ODS 9", "ODS 11","ODS 12","ODS 13","ODS 14","ODS 17"])
-
 # Função para exibir conteúdo de cada aba
 def display_ods_tab(ods_group):
     st.header(f"{ods_group}")
     scores = []
     categories = []
-    for variable in variables[ods_group]:
-        option = st.selectbox(variable["name"], options=variable["options"])
-        scores.append(int(option[0]))  # Converte o primeiro caractere da opção selecionada em inteiro
-        prefix = variable["name"].split(" ")[0]
+    for variable in variaveis[ods_group]:
+        option = st.selectbox(variable["nome"], options=variable["opções"])
+        try:
+            scores.append(int(option.split(":")[0]))  # Converte o valor numérico da opção
+        except ValueError:
+            st.error("Erro ao interpretar o valor da opção selecionada.")
+            return
+        prefix = variable["nome"].split(" ")[0]
         categories.append(prefix)
 
     if len(scores) != len(categories):
@@ -674,7 +675,7 @@ def display_ods_tab(ods_group):
 
     # Calcula a pontuação final
     percentage_score = calculate_final_score(scores)
-    st.write(f"Final Score {ods_group}: {percentage_score:.2f}%")
+    st.write(f"Pontuação Final ({ods_group}): {percentage_score:.2f}%")
 
     # Exibe o gráfico radar
     st.subheader("Gráfico Radar")
@@ -682,37 +683,19 @@ def display_ods_tab(ods_group):
     if radar_chart:
         st.pyplot(radar_chart)
 
-# Exibe as variáveis e resultados para cada aba
-with tab1:
-    display_ods_tab("ODS 7")
+# Criação dinâmica de abas
+tab_names = list(variaveis.keys())
+tabs = st.tabs(tab_names)
 
-with tab2:
-    display_ods_tab("ODS 8")
+for tab, ods_group in zip(tabs, tab_names):
+    with tab:
+        display_ods_tab(ods_group)
 
-with tab3:
-    display_ods_tab("ODS 9")
-
-with tab4:
-    display_ods_tab("ODS 11")
-
-with tab5:
-    display_ods_tab("ODS 12")
-
-with tab6:
-    display_ods_tab("ODS 13")
-
-with tab7:
-    display_ods_tab("ODS 14")
-
-with tab8:
-    display_ods_tab("ODS 17")
-    
 # Rodapé com fonte e créditos
 st.write("---")
 st.markdown(
     "<p><strong>Ferramenta desenvolvida por Darliane Cunha.</strong></p>", 
     unsafe_allow_html=True
 )
-
 
 
