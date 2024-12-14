@@ -656,8 +656,14 @@ def display_ods_tab(ods_group):
     st.header(f"{ods_group}")
     scores = []
     categories = []
-    for variable in variaveis[ods_group]:
+    for i, variable in enumerate(variaveis[ods_group]):
         try:
+            # Validar se as chaves "nome" e "opções" existem
+            if "nome" not in variable or "opções" not in variable:
+                st.error(f"Erro na configuração da variável na posição {i} do grupo {ods_group}: {variable}")
+                continue
+
+            # Exibir selectbox e processar a opção escolhida
             option = st.selectbox(variable["nome"], options=variable["opções"])
             scores.append(int(option.split(":")[0]))  # Extrai o valor numérico da opção
             categories.append(variable["nome"].split(" ")[0])  # Usa o prefixo do nome
@@ -696,5 +702,4 @@ st.markdown(
     "<p><strong>Ferramenta desenvolvida por Darliane Cunha.</strong></p>", 
     unsafe_allow_html=True
 )
-
 
