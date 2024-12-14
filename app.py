@@ -29,7 +29,7 @@ def plot_radar_chart(scores, categories):
 
 # Definir variáveis agrupadas por ODS com prefixos
 
-variables = {
+variaveis = {
 "ODS 7": [
 {"name": "7.1 Número de programas de conscientização em uso racional de energia", "options": [
 "0: Nenhum programa em operação.",
@@ -114,10 +114,203 @@ variables = {
 "1: Até 5% de desconto nas tarifas portuárias.",
 "2: 5% a 15% de desconto nas tarifas portuárias.",
 "3: Mais de 15% de desconto nas tarifas portuárias."
-]}
-
-],
-
+          ]
+        }
+    ],
+    “ODS 8: [
+        {
+            "nome": "8.1 Ausências devido ao absenteísmo relacionado à saúde",
+            "opções": [
+                "0: Ausências superiores a 5% do total de horas trabalhadas.",
+                "1: Ausências entre 3% e 5%.",
+                "2: Ausências entre 1% e 3%.",
+                "3: Ausências inferiores a 1%."
+            ]
+        },
+        {
+            "nome": "8.2 Afastamentos por doenças ocupacionais",
+            "opções": [
+                "0: Mais de 10 casos por 100 funcionários.",
+                "1: Entre 6 e 10 casos.",
+                "2: Entre 2 e 5 casos.",
+                "3: Menos de 2 casos."
+            ]
+        },
+        {
+            "nome": "8.3 Afastamentos por acidentes",
+            "opções": [
+                "0: Mais de 10 casos por 100 funcionários.",
+                "1: Entre 6 e 10 casos.",
+                "2: Entre 2 e 5 casos.",
+                "3: Menos de 2 casos."
+            ]
+        },
+        {
+            "nome": "8.4 Número de acidentes",
+            "opções": [
+                "0: Mais de 15 acidentes por 100 funcionários.",
+                "1: Entre 10 e 15 acidentes.",
+                "2: Entre 5 e 10 acidentes.",
+                "3: Menos de 5 acidentes."
+            ]
+        },
+        {
+            "nome": "8.5 Acidentes fatais",
+            "opções": [
+                "0: Qualquer acidente fatal.",
+                "1: Sem acidentes fatais, mas com alta taxa de acidentes graves (> 5 por 100 funcionários).",
+                "2: Baixa taxa de acidentes graves (1-5 por 100 funcionários).",
+                "3: Sem acidentes graves."
+            ]
+        },
+        {
+            "nome": "8.6 Percentual de trabalhadores locais em cargos de gestão",
+            "opções": [
+                "0: Menos de 20%.",
+                "1: Entre 20% e 30%.",
+                "2: Entre 30,1% e 40%.",
+                "3: Mais de 50%."
+            ]
+        },
+        {
+            "nome": "8.7 Percentual de mulheres empregadas",
+            "opções": [
+                "0: Menos de 20%.",
+                "1: Igual ou superior a 20% e inferior a 30%.",
+                "2: Igual ou superior a 30% e inferior a 50%.",
+                "3: Igual ou superior a 50%."
+            ]
+        },
+        {
+            "nome": "8.8 Percentual de jovens empregados (14 a 24 anos)",
+            "opções": [
+                "0: Menos de 5%.",
+                "1: Igual ou superior a 5% e inferior a 10%.",
+                "2: Igual ou superior a 10% e inferior a 15%.",
+                "3: Igual ou superior a 15%."
+            ]
+        },
+        {
+            "nome": "8.9 Percentual de funcionários com deficiência",
+            "opções": [
+                "0: Menos de 2%.",
+                "1: Igual ou superior a 2% e inferior a 4%.",
+                "2: Igual ou superior a 4% e inferior a 6%.",
+                "3: Igual ou superior a 6%."
+          ]
+        }
+    ],
+ 
+   “ODS 9”: [
+        {
+            "nome": "9.1 Número de patentes depositadas e concedidas no INPI (Instituto Nacional da Propriedade Industrial)",
+            "opções": [
+                "0: Nenhuma patente depositada no ano.",
+                "1: Até 2 patentes depositadas no ano, com patentes concedidas.",
+                "2: De 3 a 5 patentes depositadas no ano, com patentes concedidas.",
+                "3: Mais de 5 patentes depositadas no ano, com patentes concedidas."
+            ]
+        },
+        {
+            "nome": "9.2 Número de publicações em periódicos de alto impacto financiadas pelo porto",
+            "opções": [
+                "0: Nenhuma iniciativa ou resultado significativo.",
+                "1: Até 2 publicações em periódicos de alto impacto.",
+                "2: De 3 a 5 publicações em periódicos de alto impacto.",
+                "3: Mais de 5 publicações em periódicos de alto impacto."
+            ]
+        },
+        {
+            "nome": "9.3 Número de prêmios e selos de qualidade relacionados à Inovação",
+            "opções": [
+                "0: Nenhuma iniciativa ou resultado significativo.",
+                "1: Recebimento de até 2 prêmios ou selos de qualidade em inovação.",
+                "2: Recebimento de 3 a 5 prêmios ou selos de qualidade em inovação.",
+                "3: Recebimento de mais de 5 prêmios ou selos de qualidade em inovação."
+            ]
+        },
+        {
+            "nome": "9.4 Posição no ranking de inovação do setor portuário",
+            "opções": [
+                "0: Posição no quarto quartil no ranking de inovação.",
+                "1: Posição no terceiro quartil no ranking de inovação.",
+                "2: Posição no segundo quartil no ranking de inovação.",
+                "3: Posição no primeiro quartil no ranking de inovação."
+            ]
+        },
+        {
+            "nome": "9.5 Nível médio de maturação de inovação por projeto",
+            "opções": [
+                "0: Nenhum projeto.",
+                "1: Projetos em fase de conceito inicial ou desenvolvimento com baixo nível de maturação.",
+                "2: Projetos em fase de protótipo ou piloto com nível médio de maturação.",
+                "3: Projetos com produtos finais ou soluções implementadas com alto nível de maturidade tecnológica (Technology Readiness Levels)."
+            ]
+        },
+        {
+            "nome": "9.6 Diversidade de áreas de conhecimento em projetos de pesquisa aplicada",
+            "opções": [
+                "0: Nenhuma área de conhecimento envolvida nos projetos.",
+                "1: Até 2 áreas de conhecimento envolvidas nos projetos.",
+                "2: De 3 a 5 áreas de conhecimento diferentes envolvidas nos projetos.",
+                "3: Mais de 5 áreas de conhecimento diferentes envolvidas nos projetos."
+            ]
+        },
+        {
+            "nome": "9.7 Percentual de operações automatizadas no porto",
+            "opções": [
+                "0: Nenhuma operação automatizada.",
+                "1: Até 25% das operações automatizadas.",
+                "2: De 25% a 50% das operações automatizadas.",
+                "3: Mais de 50% das operações automatizadas."
+            ]
+        },
+        {
+            "nome": "9.8 Número de acordos com universidades e centros de pesquisa ou projetos financiados",
+            "opções": [
+                "0: Nenhum acordo ou projeto.",
+                "1: Até 2 acordos ou projetos.",
+                "2: De 3 a 5 acordos ou projetos estabelecidos.",
+                "3: Mais de 5 acordos ou projetos."
+            ]
+        },
+        {
+            "nome": "9.9 Número de pesquisadores externos da instituição portuária ou universidade vinculados a projetos de inovação",
+            "opções": [
+                "0: Nenhum pesquisador externo vinculado.",
+                "1: Até 3 pesquisadores externos vinculados.",
+                "2: De 4 a 6 pesquisadores externos vinculados.",
+                "3: Mais de 6 pesquisadores externos vinculados."
+            ]
+        },
+        {
+            "nome": "9.10 Número de empresas parceiras em projetos de inovação",
+            "opções": [
+                "0: Nenhuma empresa parceira.",
+                "1: Até 2 empresas parceiras envolvidas.",
+                "2: De 3 a 5 empresas parceiras envolvidas.",
+                "3: Mais de 5 empresas parceiras com colaboração efetiva e contribuições significativas."
+            ]
+        },
+        {
+            "nome": "9.11 Número de startups apoiadas focadas em soluções inovadoras",
+            "opções": [
+                "0: Nenhuma startup.",
+                "1: Apoio a até 2 startups.",
+                "2: Apoio a 3-5 startups.",
+                "3: Apoio a mais de 5 startups."
+            ]
+        },
+        {
+            "nome": "9.12 Número de acordos com outros portos ou terminais para a promoção da inovação",
+            "opções": [
+                "0: Nenhum acordo.",
+                "1: Até 2 acordos.",
+                "2: De 3 a 5 acordos.",
+                "3: Mais de 5 acordos."
+          ]
+        }
+    ],
 "ODS 13": [
 {"name": "13.1 Status do Plano de Estratégia para Mudança Climática", "options": [
 "0: Nenhuma estratégia.",
@@ -166,17 +359,158 @@ variables = {
 "1: Redução de emissões inferior a 5% por meio de novas tecnologias.",
 "2: Redução de 5-10% das emissões por meio de novas tecnologias.",
 "3: Redução de mais de 10% das emissões por meio de novas tecnologias."
-]}
+          ]
+        }
+    ],
+    “ODS” 14: [
+        {
+            "nome": "14.4 Número de eventos ambientais registrados na costa da região",
+            "opções": [
+                "0: Nenhum monitoramento de eventos.",
+                "1: Mais de 5 eventos ambientais registrados no ano.",
+                "2: De 2 a 5 eventos ambientais registrados no ano.",
+                "3: 0 a 1 evento ambiental registrado no ano, com respostas rápidas e eficazes."
+            ]
+        },
+        {
+            "nome": "14.5 Monitoramento da água de lastro",
+            "opções": [
+                "0: Sem monitoramento em vigor.",
+                "1: Monitoramento inconsistente.",
+                "2: Monitoramento regular.",
+                "3: Monitoramento sistemático."
+            ]
+        },
+        {
+            "nome": "14.6 Área total de habitats marinhos protegidos na área de operação do porto",
+            "opções": [
+                "0: Nenhum programa de proteção em vigor.",
+                "1: Menos de 10% dos habitats marinhos estão sob proteção.",
+                "2: 10-25% dos habitats marinhos estão sob proteção.",
+                "3: Mais de 25% dos habitats marinhos estão sob proteção, com programas de conservação ativos."
+            ]
+        },
+        {
+            "nome": "14.7 Valor total investido em pesquisa de recursos marinhos sustentáveis",
+            "opções": [
+                "0: Sem investimentos.",
+                "1: Investimento inferior a 5% do orçamento total de pesquisa.",
+                "2: Investimento de 5-10% do orçamento total de pesquisa.",
+                "3: Investimento superior a 10% do orçamento total de pesquisa."
+            ]
+        },
+        {
+            "nome": "14.8 Número de projetos de pesquisa marinha financiados pelo porto",
+            "opções": [
+                "0: Nenhum projeto.",
+                "1: Até 2 projetos financiados no ano.",
+                "2: De 3 a 5 projetos financiados no ano.",
+                "3: Mais de 5 projetos financiados no ano, com colaborações de IES ou centros de pesquisa."
+            ]
+        }
+    ],
+    “ODS 17: [
+        {
+            "nome": "17.1 Status como signatário do Pacto Global da ONU",
+            "opções": [
+                "0: Não é signatário.",
+                "1: Signatário, sem relatório de progresso.",
+                "2: Signatário ativo.",
+                "3: Signatário ativo, com relatório anual de progresso e metas para melhoria contínua."
+            ]
+        },
+        {
+            "nome": "17.2 Alinhamento dos ODS com indicadores IDA e GRI",
+            "opções": [
+                "0: Nenhum alinhamento documentado.",
+                "1: Alinhamento parcial com os ODS.",
+                "2: Alinhamento parcial e relatórios regulares sobre o progresso dos ODS.",
+                "3: Alinhamento completo e relatórios regulares sobre o progresso dos ODS."
+            ]
+        },
+        {
+            "nome": "17.3 Existência de certificação ECOPORTS",
+            "opções": [
+                "0: Não certificado.",
+                "1: Em processo de certificação.",
+                "2: Certificado, sem renovação regular.",
+                "3: Certificado, com renovação regular e cumprimento de todos os critérios."
+            ]
+        },
+        {
+            "nome": "17.4 Publicação do relatório de sustentabilidade",
+            "opções": [
+                "0: Relatório não publicado.",
+                "1: Relatório em fase de implementação.",
+                "2: Relatório publicado, mas não em conformidade com os padrões GRI ou equivalente.",
+                "3: Relatório publicado e em conformidade com os padrões GRI ou equivalente."
+            ]
+        },
+        {
+            "nome": "17.5 Divulgação da posição no IDA",
+            "opções": [
+                "0: Posição no IDA não divulgada.",
+                "1: Posição no IDA divulgada publicamente sem planos de ação para melhoria.",
+                "2: Posição no IDA divulgada publicamente.",
+                "3: Posição no IDA divulgada publicamente com planos de ação para melhoria."
+            ]
+        },
+        {
+            "nome": "17.6 Publicação de indicadores de sustentabilidade",
+            "opções": [
+                "0: Indicadores não publicados.",
+                "1: Indicadores em fase de implementação.",
+                "2: Indicadores publicados, mas sem detalhes ou contexto.",
+                "3: Indicadores publicados com detalhes, contexto e comparações de desempenho."
+            ]
+        },
+        {
+            "nome": "17.7 Registro e comunicação de incidentes ambientais",
+            "opções": [
+                "0: Sem acompanhamento de registros.",
+                "1: Registro e comunicação não sistemáticos.",
+                "2: Registro sistemático e comunicação interna.",
+                "3: Registro e comunicação sistemáticos, públicos e com ações de resposta."
+            ]
+        },
+        {
+            "nome": "17.8 Número de membros independentes no conselho de administração",
+            "opções": [
+                "0: Nenhum membro independente.",
+                "1: Menos de 25% dos membros são independentes.",
+                "2: 25-50% dos membros são independentes.",
+                "3: Mais de 50% dos membros são independentes."
+            ]
+        },
+        {
+            "nome": "17.9 Número de parcerias estabelecidas com ONGs e outras entidades para iniciativas de sustentabilidade",
+            "opções": [
+                "0: Nenhuma parceria estabelecida.",
+                "1: Até 2 parcerias estabelecidas.",
+                "2: De 3 a 5 parcerias estabelecidas.",
+                "3: Mais de 5 parcerias estabelecidas com projetos em andamento."
+            ]
+        },
+        {
+            "nome": "17.10 Listagem de canais de comunicação ativos com stakeholders",
+            "opções": [
+                "0: Nenhum canal de comunicação.",
+                "1: Canais de comunicação limitados ou ineficazes.",
+                "2: Alguns canais de comunicação estabelecidos e ativos.",
+                "3: Diversos canais de comunicação estabelecidos, ativos e com feedback regular."
+            ]
+        }
+    ]
+}
 
-]}
 
 
     
 # Título da aplicação
-st.markdown("<h1 style='color: darkgreen;'> Atributos ODS 7 e 13</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='color: darkgreen;'> Atributos ODS </h1>", unsafe_allow_html=True)
 
 # Criação de abas para SDG 7 e 13
-tab1, tab2 = st.tabs(["ODS 7", "ODS 13"])
+tab1, tab2 = st.tabs(["ODS 7", "ODS 8", "ODS 9", "ODS 11","ODS 12","ODS 13","ODS 14","ODS 17"])
 
 # Função para exibir conteúdo de cada aba
 def display_ods_tab(ods_group):
@@ -208,8 +542,25 @@ with tab1:
     display_ods_tab("ODS 7")
 
 with tab2:
+    display_ods_tab("ODS 8")
+
+with tab3:
+    display_ods_tab("ODS 9")
+
+with tab4:
+    display_ods_tab("ODS 11")
+
+with tab5:
+    display_ods_tab("ODS 12")
+
+with tab6:
     display_ods_tab("ODS 13")
 
+with tab7:
+    display_ods_tab("ODS 14")
+
+with tab8:
+    display_ods_tab("ODS 17")
     
 # Rodapé com fonte e créditos
 st.write("---")
