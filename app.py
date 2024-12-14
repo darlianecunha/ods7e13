@@ -61,7 +61,7 @@ variaveis = {
     },
     {
         "nome": "7.4 Percentual de energia renovável contratada e produzida em instalações portuárias",
-        "options": [
+        "opções": [
             "0: Nenhum uso de energia renovável.",
             "1: Até 10% da energia utilizada é renovável.",
             "2: Mais de 10% até 50% da energia usada é renovável.",
@@ -132,8 +132,8 @@ variaveis = {
         ]
     },
     {
-        "name": "7.12 Número de iniciativas de inovação tecnológica em atendimento elétrico e energético para navios",
-        "options": [
+        "nome": "7.12 Número de iniciativas de inovação tecnológica em atendimento elétrico e energético para navios",
+        "opções": [
             "0: Nenhuma iniciativa.",
             "1: Até 2 iniciativas de inovação tecnológica em fase de planejamento ou piloto.",
             "2: 3-5 iniciativas em fase de implementação ou avaliação de eficácia.",
@@ -527,7 +527,7 @@ variaveis = {
         ]
     },
     {
-        "name": "13.4 Programa de Monitoramento Climático",
+        "nome": "13.4 Programa de Monitoramento Climático",
         "options": [
             "0: Programa inexistente.",
             "1: Programa em fase de implementação.",
@@ -545,7 +545,7 @@ variaveis = {
         ]
     },
     {
-        "name": "13.6 Infraestrutura Resiliente ao Clima",
+        "nome": "13.6 Infraestrutura Resiliente ao Clima",
         "opções": [
             "0: Nenhuma infraestrutura avaliada como resiliente ao clima.",
             "1: Menos de 25% da infraestrutura avaliada como resiliente ao clima.",
@@ -554,7 +554,7 @@ variaveis = {
         ]
     },
     {
-        "name": "13.7 Índice de Eficiência do Tráfego de Carga",
+        "nome": "13.7 Índice de Eficiência do Tráfego de Carga",
         "opções": [
             "0: Índice não calculado.",
             "1: Índice de eficiência abaixo da média do setor.",
