@@ -201,7 +201,7 @@ variaveis = {
         }
     ],
  
-   “ODS 9”: [
+   "ODS 9": [
         {
             "nome": "9.1 Número de patentes depositadas e concedidas no INPI (Instituto Nacional da Propriedade Industrial)",
             "opções": [
@@ -308,9 +308,154 @@ variaveis = {
                 "1: Até 2 acordos.",
                 "2: De 3 a 5 acordos.",
                 "3: Mais de 5 acordos."
-          ]
+  ]
         }
     ],
+
+    "variaveis": {
+        "ODS 11": [
+            {
+                "nome": "11.1 Número de reclamações relacionadas ao impacto ambiental e social do porto",
+                "opções": [
+                    "0: Mais de 10 reclamações anuais.",
+                    "1: De 5 a 10 reclamações anuais, com ações de mitigação.",
+                    "2: De 2 a 4 reclamações anuais, com ações de mitigação.",
+                    "3: Até 1 reclamação anual, com ações de mitigação."
+                ]
+            },
+            {
+                "nome": "11.2 Valor do Índice de Controle de Ruído do Porto",
+                "opções": [
+                    "0: Nenhuma medição do índice.",
+                    "1: Índice acima do limite permitido por lei.",
+                    "2: Índice dentro dos limites permitidos por lei.",
+                    "3: Índice 10% abaixo do limite permitido por lei."
+                ]
+            },
+            {
+                "nome": "11.3 Número de projetos de sustentabilidade direcionados à comunidade",
+                "opções": [
+                    "0: Nenhum projeto.",
+                    "1: Até 2 projetos em andamento.",
+                    "2: De 3 a 5 projetos em andamento, com impacto inicial comprovado.",
+                    "3: Mais de 5 projetos em andamento, com impacto significativo e comprovadamente sustentável."
+                ]
+            },
+            {
+                "nome": "11.4 Quantidade de áreas verdes ou espaços públicos desenvolvidos ou mantidos pelo porto",
+                "opções": [
+                    "0: Nenhuma área verde.",
+                    "1: Menos de 10% do espaço total.",
+                    "2: Entre 10% e 30% do espaço total.",
+                    "3: Mais de 30% do espaço total."
+                ]
+            },
+            {
+                "nome": "11.5 Valor total dos investimentos em infraestrutura da comunidade local (estradas, iluminação, saneamento, outros)",
+                "opções": [
+                    "0: Nenhum investimento.",
+                    "1: O investimento total representa menos de 5% do orçamento do porto.",
+                    "2: O investimento total representa entre 5% e 10% do orçamento do porto.",
+                    "3: O investimento total representa mais de 10% do orçamento do porto."
+                ]
+            },
+            {
+                "nome": "11.6 Número de programas ou parcerias para mobilidade sustentável",
+                "opções": [
+                    "0: Nenhum programa.",
+                    "1: Até 2 programas ou parcerias estabelecidas.",
+                    "2: De 3 a 5 programas ou parcerias estabelecidas.",
+                    "3: Mais de 5 programas ou parcerias estabelecidas."
+                ]
+            },
+            {
+                "nome": "11.7 Número de iniciativas de engajamento comunitário pelo porto",
+                "opções": [
+                    "0: Nenhuma iniciativa.",
+                    "1: Até 3 iniciativas de engajamento.",
+                    "2: De 4 a 6 iniciativas de engajamento.",
+                    "3: Mais de 6 iniciativas de engajamento com ampla cobertura e alta participação da comunidade."
+                      ]
+        }
+    ],
+
+
+"ODS 12": [
+            {
+                "nome": "12.1 Valor da Concentração de Poluentes Atmosféricos",
+                "opções": [
+                    "0: Nenhuma medição de poluentes realizada.",
+                    "1: Concentrações de poluentes até 10% acima dos padrões estabelecidos.",
+                    "2: Concentrações de poluentes dentro dos padrões estabelecidos.",
+                    "3: Concentrações de poluentes 10% abaixo dos padrões estabelecidos."
+                ]
+            },
+            {
+                "nome": "12.2 Volume total de água utilizada",
+                "opções": [
+                    "0: Nenhum controle sobre o uso da água.",
+                    "1: Uso de água acima do limite concedido.",
+                    "2: Uso de água igual ao limite concedido.",
+                    "3: Uso de água 10% abaixo do limite concedido."
+                ]
+            },
+            {
+                "nome": "12.3 Volume total de água reutilizada",
+                "opções": [
+                    "0: Nenhum reaproveitamento de água.",
+                    "1: Menos de 10% do total de água utilizada é reutilizada.",
+                    "2: Entre 10% e 25% do total de água utilizada é reutilizada.",
+                    "3: Mais de 25% do total de água utilizada é reutilizada."
+                ]
+            },
+            {
+                "nome": "12.4 Número de acidentes ambientais registrados internamente",
+                "opções": [
+                    "0: Nenhuma medição para registro de acidentes ambientais.",
+                    "1: Dois ou mais acidentes registrados no ano.",
+                    "2: Um acidente registrado no ano.",
+                    "3: Nenhum acidente ambiental registrado no ano."
+                ]
+            },
+            {
+                "nome": "12.5 Quantidade de resíduos gerados",
+                "opções": [
+                    "0: Nenhum sistema de gestão de resíduos.",
+                    "1: Redução de até 5% na geração de resíduos em comparação ao ano anterior.",
+                    "2: Redução de 5-10% na geração de resíduos em comparação ao ano anterior.",
+                    "3: Redução de mais de 10% na geração de resíduos em comparação ao ano anterior."
+                ]
+            },
+            {
+                "nome": "12.6 Percentual de resíduos reciclados e/ou reutilizados",
+                "opções": [
+                    "0: Nenhuma reciclagem e/ou reutilização de resíduos.",
+                    "1: Menos de 30% dos resíduos gerados são reciclados e/ou reutilizados.",
+                    "2: Entre 30% e 60% dos resíduos gerados são reciclados e/ou reutilizados.",
+                    "3: Mais de 60% dos resíduos gerados são reciclados e/ou reutilizados."
+                ]
+            },
+            {
+                "nome": "12.7 Uso de Sistema de Gestão Ambiental",
+                "opções": [
+                    "0: Nenhum sistema implementado.",
+                    "1: Sistema implementado, mas não totalmente integrado às operações diárias.",
+                    "2: Sistema implementado e parcialmente integrado às operações diárias.",
+                    "3: Sistema totalmente implementado e integrado às operações diárias."
+                ]
+            },
+            {
+                "nome": "12.8 Status de Certificação ISO 14000",
+                "opções": [
+                    "0: Nenhuma iniciativa de certificação.",
+                    "1: Não certificado ou em processo de obtenção de certificação.",
+                    "2: Certificado, mas sem revisões anuais ou melhorias contínuas.",
+                    "3: Certificado com revisões anuais e melhorias contínuas implementadas."
+     ]
+        }
+    ],
+
+
 "ODS 13": [
 {"name": "13.1 Status do Plano de Estratégia para Mudança Climática", "options": [
 "0: Nenhuma estratégia.",
@@ -362,7 +507,7 @@ variaveis = {
           ]
         }
     ],
-    “ODS” 14: [
+    "ODS 14": [
         {
             "nome": "14.4 Número de eventos ambientais registrados na costa da região",
             "opções": [
@@ -409,7 +554,7 @@ variaveis = {
             ]
         }
     ],
-    “ODS 17: [
+   "ODS 17": [
         {
             "nome": "17.1 Status como signatário do Pacto Global da ONU",
             "opções": [
